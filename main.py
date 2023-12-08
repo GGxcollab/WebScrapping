@@ -17,18 +17,10 @@ pyautogui.press("enter")
 
 time.sleep(3)
 
-# Clica na area de pesquisa
-
-# pyautogui.click(x=-1676, y=57)
-
-count_num = 1
-# #count_pag = 1
-
+# Percorre pela lista "search_hashs" e abre cada hash em paginas diferentes
 for hash in search_hashs['Search_Paginas']:
     print(hash)
 
-    count_num = count_num + 1  #(3)
-    print(count_num)
     # entrar no link
     link = "https://www.virustotal.com/"
     pyautogui.write(link)
